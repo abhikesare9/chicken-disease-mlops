@@ -1,1 +1,631 @@
 [2024-02-28 14:28:57,548: INFO: main: welcome to project]
+[2024-03-02 20:21:00,392: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:21:00,393: INFO: configuration: this is  the value config\config.yaml]
+[2024-03-02 20:21:00,394: INFO: configuration: this  is path config\config.yaml]
+[2024-03-02 20:21:00,395: INFO: configuration: this is the location C:\Users\abhik\Desktop\chicken-disease-mlops]
+[2024-03-02 20:21:00,395: ERROR: main: 'WindowsPath' object has no attribute 'artifact_root']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 17, in __init__
+    create_directories([self.config.artifact_root])
+AttributeError: 'WindowsPath' object has no attribute 'artifact_root'
+[2024-03-02 20:24:56,539: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:24:56,541: INFO: configuration: this is  the value config\config.yaml]
+[2024-03-02 20:24:56,542: INFO: configuration: this  is path config\config.yaml]
+[2024-03-02 20:24:56,543: INFO: configuration: this is the location C:\Users\abhik\Desktop\chicken-disease-mlops]
+[2024-03-02 20:24:56,546: INFO: configuration: {'artifact_root': 'artifacts', 'data_ingestion': {'root_dir': 'artifacts/data_ingestion', 'source_url': 'https://github.com/entbappy/Branching-tutorial/blob/master/Chicken-fecal-images.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}}]
+[2024-03-02 20:24:56,548: ERROR: main: 'WindowsPath' object has no attribute 'artifact_root']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 20, in __init__
+    create_directories([self.config.artifact_root])
+AttributeError: 'WindowsPath' object has no attribute 'artifact_root'
+[2024-03-02 20:26:41,827: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:26:41,830: INFO: configuration: this is  the value config\config.yaml]
+[2024-03-02 20:26:41,831: INFO: configuration: this  is path config\config.yaml]
+[2024-03-02 20:26:41,831: INFO: configuration: this is the location C:\Users\abhik\Desktop\chicken-disease-mlops]
+[2024-03-02 20:26:41,834: INFO: configuration: {'artifact_root': 'artifacts', 'data_ingestion': {'root_dir': 'artifacts/data_ingestion', 'source_url': 'https://github.com/entbappy/Branching-tutorial/blob/master/Chicken-fecal-images.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}}]
+[2024-03-02 20:26:41,837: ERROR: main: 'WindowsPath' object is not subscriptable]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 20, in __init__
+    create_directories([self.config['artifact_root']])
+TypeError: 'WindowsPath' object is not subscriptable
+[2024-03-02 20:30:41,021: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:30:41,025: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 20:30:41,037: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 20:30:41,038: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 259, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-03-02 20:31:29,266: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:31:29,271: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 20:31:29,272: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 20:31:29,273: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 259, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-03-02 20:31:59,600: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:31:59,605: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 20:31:59,606: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 20:31:59,607: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 259, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-03-02 20:33:06,512: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:33:06,524: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 20:33:06,524: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 20:33:06,533: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 259, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-03-02 20:37:10,686: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:37:10,692: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 20:37:10,693: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 20:37:10,695: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\utils\common.py", line 33, in read_yaml
+    return ConfigBox(content)
+  File "box\box.py", line 259, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-03-02 20:39:46,264: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:39:46,269: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 20:39:46,271: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 20:39:46,272: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\utils\common.py", line 33, in read_yaml
+    return dict(content)
+TypeError: 'NoneType' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\ensure\main.py", line 849, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\utils\common.py", line 35, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2024-03-02 20:41:55,751: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:41:55,758: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 20:41:55,759: INFO: common: <class 'dict'>]
+[2024-03-02 20:41:55,760: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 20:41:55,761: INFO: common: <class 'NoneType'>]
+[2024-03-02 20:41:55,762: ERROR: main: Return value of <function read_yaml at 0x000001AF7AA3A320> of type <class 'NoneType'> does not match annotation type <class 'dict'>]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\ensure\main.py", line 855, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Return value of <function read_yaml at 0x000001AF7AA3A320> of type <class 'NoneType'> does not match annotation type <class 'dict'>
+[2024-03-02 20:42:33,555: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:42:33,571: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 20:42:33,572: INFO: common: <class 'dict'>]
+[2024-03-02 20:42:33,573: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 20:42:33,574: INFO: common: <class 'NoneType'>]
+[2024-03-02 20:42:33,575: ERROR: main: Return value of <function read_yaml at 0x0000023A6BC7A320> of type <class 'NoneType'> does not match annotation type <class 'dict'>]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\ensure\main.py", line 855, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Return value of <function read_yaml at 0x0000023A6BC7A320> of type <class 'NoneType'> does not match annotation type <class 'dict'>
+[2024-03-02 20:46:39,955: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:46:39,959: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 20:46:39,960: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 20:46:39,961: ERROR: main: Return value of <function read_yaml at 0x0000018FD727A320> of type <class 'NoneType'> does not match annotation type <class 'dict'>]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\ensure\main.py", line 855, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Return value of <function read_yaml at 0x0000018FD727A320> of type <class 'NoneType'> does not match annotation type <class 'dict'>
+[2024-03-02 22:31:34,776: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:31:34,784: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:31:34,785: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:31:34,786: ERROR: main: Return value of <function read_yaml at 0x0000017C0C034DC0> of type <class 'NoneType'> does not match annotation type <class 'dict'>]
+Traceback (most recent call last):
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\ensure\main.py", line 855, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Return value of <function read_yaml at 0x0000017C0C034DC0> of type <class 'NoneType'> does not match annotation type <class 'dict'>
+[2024-03-02 22:34:36,089: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:34:36,093: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:34:36,095: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:34:36,097: ERROR: main: Return value of <function read_yaml at 0x00000256CDEA2B90> of type <class 'NoneType'> does not match annotation type <class 'dict'>]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\ensure\main.py", line 855, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Return value of <function read_yaml at 0x00000256CDEA2B90> of type <class 'NoneType'> does not match annotation type <class 'dict'>
+[2024-03-02 22:38:18,053: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:38:18,058: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:38:18,062: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:38:18,064: ERROR: main: Return value of <function read_yaml at 0x0000026C73E7A320> of type <class 'NoneType'> does not match annotation type <class 'dict'>]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\ensure\main.py", line 855, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Return value of <function read_yaml at 0x0000026C73E7A320> of type <class 'NoneType'> does not match annotation type <class 'dict'>
+[2024-03-02 22:40:34,222: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:40:34,226: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:40:34,230: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:40:34,232: ERROR: main: Return value of <function read_yaml at 0x000002AC04A62C20> of type <class 'NoneType'> does not match annotation type <class 'dict'>]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 13, in __init__
+    self.params = read_yaml(params_file_path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\ensure\main.py", line 855, in __call__
+    raise EnsureError(msg.format(
+ensure.main.EnsureError: Return value of <function read_yaml at 0x000002AC04A62C20> of type <class 'NoneType'> does not match annotation type <class 'dict'>
+[2024-03-02 22:45:02,990: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:45:02,993: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:45:03,049: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:45:03,054: INFO: configuration: this is yaml {'artifacts_root': 'artifacts', 'data_ingestion': {'root_dir': 'artifacts/data_ingestion', 'source_URL': 'https://github.com/entbappy/Branching-tutorial/raw/master/Chicken-fecal-images.zip', 'local_data_file': 'artifacts/data_ingestion/data.zip', 'unzip_dir': 'artifacts/data_ingestion'}}]
+[2024-03-02 22:45:03,057: ERROR: main: 'dict' object has no attribute 'data_ingestion']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 19, in get_data_ingestion_config
+    config = self.config.data_ingestion
+AttributeError: 'dict' object has no attribute 'data_ingestion'
+[2024-03-02 22:46:14,948: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:46:14,954: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:46:14,967: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:46:14,970: INFO: common: created directory at: artifacts]
+[2024-03-02 22:46:14,971: ERROR: main: local variable 'create_directories' referenced before assignment]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 18, in get_data_ingestion_config
+    create_directories =  create_directories([config.root_dir])
+UnboundLocalError: local variable 'create_directories' referenced before assignment
+[2024-03-02 22:48:29,903: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:48:29,906: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:48:29,909: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:48:29,910: INFO: common: created directory at: artifacts]
+[2024-03-02 22:48:29,912: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 22:48:29,918: ERROR: main: "'ConfigBox' object has no attribute 'source_url'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'source_url'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'source_url'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 21, in get_data_ingestion_config
+    source_url=config.source_url,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'source_url'"
+[2024-03-02 22:48:55,384: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:48:55,399: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:48:55,408: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:48:55,409: INFO: common: created directory at: artifacts]
+[2024-03-02 22:48:55,411: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 22:48:55,412: ERROR: main: type object 'DataIngestionConfig' has no attribute 'local_file_path']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\data_ingestion.py", line 15, in download_file
+    if not os.path.exists(self.config.local_file_path):
+AttributeError: type object 'DataIngestionConfig' has no attribute 'local_file_path'
+[2024-03-02 22:49:11,530: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:49:11,544: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:49:11,551: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:49:11,552: INFO: common: created directory at: artifacts]
+[2024-03-02 22:49:11,554: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 22:49:11,555: ERROR: main: "'ConfigBox' object has no attribute 'local_data_file'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'local_data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'local_data_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'local_data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'local_data_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'local_data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'local_data_file'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'local_data_file'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 22, in get_data_ingestion_config
+    local_file_path=config.local_data_file,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'local_data_file'"
+[2024-03-02 22:49:37,892: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:49:37,908: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:49:37,911: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:49:37,911: INFO: common: created directory at: artifacts]
+[2024-03-02 22:49:37,913: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 22:49:37,914: ERROR: main: type object 'DataIngestionConfig' has no attribute 'local_file_path']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\data_ingestion.py", line 15, in download_file
+    if not os.path.exists(self.config.local_file_path):
+AttributeError: type object 'DataIngestionConfig' has no attribute 'local_file_path'
+[2024-03-02 22:51:36,466: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:51:36,472: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:51:36,473: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:51:36,475: INFO: common: created directory at: artifacts]
+[2024-03-02 22:51:36,476: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 22:51:36,478: ERROR: main: type object 'DataIngestionConfig' has no attribute 'local_file_path']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\data_ingestion.py", line 16, in download_file
+    if not os.path.exists(self.config.local_file_path):
+AttributeError: type object 'DataIngestionConfig' has no attribute 'local_file_path'
+[2024-03-02 22:52:19,809: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:52:19,813: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:52:19,814: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:52:19,815: INFO: common: created directory at: artifacts]
+[2024-03-02 22:52:19,817: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 22:52:19,817: ERROR: main: type object 'DataIngestionConfig' has no attribute 'local_file_path']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\data_ingestion.py", line 16, in download_file
+    if not os.path.exists(self.config.local_file_path):
+AttributeError: type object 'DataIngestionConfig' has no attribute 'local_file_path'
+[2024-03-02 22:53:46,579: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:53:46,585: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:53:46,588: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:53:46,589: INFO: common: created directory at: artifacts]
+[2024-03-02 22:53:46,591: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 22:53:46,591: ERROR: main: type object 'DataIngestionConfig' has no attribute 'local_file_path']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\data_ingestion.py", line 16, in download_file
+    if not os.path.exists(self.config.local_file_path):
+AttributeError: type object 'DataIngestionConfig' has no attribute 'local_file_path'
+[2024-03-02 22:55:02,184: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:55:02,193: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:55:02,196: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:55:02,197: INFO: common: created directory at: artifacts]
+[2024-03-02 22:55:02,198: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 22:55:02,200: ERROR: main: DataIngestionConfig.__init__() missing 4 required positional arguments: 'root_dir', 'source_url', 'local_file_path', and 'unzip_dir']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion = DataIngestion(config=data_ingestion_config)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\data_ingestion.py", line 12, in __init__
+    print(self.config())
+TypeError: DataIngestionConfig.__init__() missing 4 required positional arguments: 'root_dir', 'source_url', 'local_file_path', and 'unzip_dir'
+[2024-03-02 22:57:32,474: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:57:32,480: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:57:32,482: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:57:32,483: INFO: common: created directory at: artifacts]
+[2024-03-02 22:57:32,485: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 22:57:36,579: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: CCE8:1E6B17:147C05:1AD8A1:65E36183
+Accept-Ranges: bytes
+Date: Sat, 02 Mar 2024 17:27:34 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100031-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1709400453.432394,VS0,VE948
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 0b0b553dfcac55fa0f64a2aec450d71a98848ec0
+Expires: Sat, 02 Mar 2024 17:32:34 GMT
+Source-Age: 1
+
+]
+[2024-03-02 22:57:37,466: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-02 22:58:18,760: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:58:18,762: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:58:18,764: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:58:18,765: INFO: common: created directory at: artifacts]
+[2024-03-02 22:58:18,766: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 22:58:18,768: ERROR: main: 'DataIngestionConfig' object has no attribute 'local_data_file']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\data_ingestion.py", line 24, in download_file
+    logger.info(f"File already exists of size: {get_size(Path(self.config.local_data_file))}")
+AttributeError: 'DataIngestionConfig' object has no attribute 'local_data_file'
+[2024-03-02 22:59:10,430: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:59:10,434: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:59:10,437: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:59:10,438: INFO: common: created directory at: artifacts]
+[2024-03-02 22:59:10,440: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 22:59:10,441: ERROR: main: 'DataIngestionConfig' object has no attribute 'local_data_file']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\data_ingestion.py", line 21, in download_file
+    logger.info(f"File already exists of size: {get_size(Path(self.config.local_data_file))}")
+AttributeError: 'DataIngestionConfig' object has no attribute 'local_data_file'
+[2024-03-02 22:59:29,888: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:59:29,900: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:59:29,904: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:59:29,907: INFO: common: created directory at: artifacts]
+[2024-03-02 22:59:29,909: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 22:59:32,818: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: CCE8:1E6B17:147C05:1AD8A1:65E36183
+Accept-Ranges: bytes
+Date: Sat, 02 Mar 2024 17:29:30 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100022-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709400571.587605,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 56974edbd119ddeb13ffe4062b5def0650e3a7d2
+Expires: Sat, 02 Mar 2024 17:34:30 GMT
+Source-Age: 117
+
+]
+[2024-03-02 22:59:33,722: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-02 22:59:49,386: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 22:59:49,389: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-02 22:59:49,393: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-02 22:59:49,394: INFO: common: created directory at: artifacts]
+[2024-03-02 22:59:49,396: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-02 22:59:49,397: ERROR: main: 'DataIngestionConfig' object has no attribute 'local_data_file']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\data_ingestion.py", line 21, in download_file
+    logger.info(f"File already exists of size: {get_size(Path(self.config.local_data_file))}")
+AttributeError: 'DataIngestionConfig' object has no attribute 'local_data_file'

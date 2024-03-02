@@ -1,0 +1,77 @@
+[2024-03-02 13:28:39,634: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 13:28:39,634: ERROR: main: 'WindowsPath' object has no attribute 'artifacts_root']
+Traceback (most recent call last):
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 12, in __init__
+    create_directories([self.config.artifacts_root])
+AttributeError: 'WindowsPath' object has no attribute 'artifacts_root'
+[2024-03-02 13:29:29,471: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 13:29:29,471: ERROR: main: 'WindowsPath' object has no attribute 'artifact_root']
+Traceback (most recent call last):
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 12, in __init__
+    create_directories([self.config.artifact_root])
+AttributeError: 'WindowsPath' object has no attribute 'artifact_root'
+[2024-03-02 19:59:50,831: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 19:59:50,831: ERROR: main: 'WindowsPath' object has no attribute 'artifact_root']
+Traceback (most recent call last):
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 12, in __init__
+    create_directories([self.config.artifact_root])
+AttributeError: 'WindowsPath' object has no attribute 'artifact_root'
+[2024-03-02 20:08:02,878: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:08:02,881: INFO: configuration: this is  the value config\config.yaml]
+[2024-03-02 20:08:02,881: ERROR: main: 'WindowsPath' object has no attribute 'artifact_root']
+Traceback (most recent call last):
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 14, in __init__
+    create_directories([self.config.artifact_root])
+AttributeError: 'WindowsPath' object has no attribute 'artifact_root'
+[2024-03-02 20:09:39,209: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:09:39,221: INFO: configuration: this is  the value config\config.yaml]
+[2024-03-02 20:09:39,221: ERROR: main: 'WindowsPath' object has no attribute 'artifact_root']
+Traceback (most recent call last):
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 14, in __init__
+    create_directories([self.config.artifact_root])
+AttributeError: 'WindowsPath' object has no attribute 'artifact_root'
+[2024-03-02 20:13:00,586: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:13:00,601: INFO: configuration: this is  the value config\config.yaml]
+[2024-03-02 20:13:00,601: INFO: configuration: this  is path config\config.yaml]
+[2024-03-02 20:13:00,602: ERROR: main: 'WindowsPath' object has no attribute 'artifact_root']
+Traceback (most recent call last):
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 15, in __init__
+    create_directories([self.config.artifact_root])
+AttributeError: 'WindowsPath' object has no attribute 'artifact_root'
+[2024-03-02 20:18:24,260: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-02 20:18:24,261: INFO: configuration: this is  the value config\config.yaml]
+[2024-03-02 20:18:24,262: INFO: configuration: this  is path config\config.yaml]
+[2024-03-02 20:18:24,263: INFO: configuration: this is the location C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier]
+[2024-03-02 20:18:24,264: ERROR: main: 'WindowsPath' object has no attribute 'artifact_root']
+Traceback (most recent call last):
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 14, in main
+    config = Configuration_manager()
+  File "c:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 17, in __init__
+    create_directories([self.config.artifact_root])
+AttributeError: 'WindowsPath' object has no attribute 'artifact_root'
