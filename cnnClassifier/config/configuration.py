@@ -1,6 +1,6 @@
 from cnnClassifier.constants import *
 from cnnClassifier.utils.common import create_directories,read_yaml
-from cnnClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig
+from cnnClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig,PrepareCallbackConfig
 from cnnClassifier import logger
 import os
 import yaml
@@ -40,3 +40,13 @@ class Configuration_manager:
             learning_rate = self.params.LEARNING_RATE,
         )
         return base_model_config
+    
+    def prepare_callback_config(self) -> PrepareCallbackConfig:
+        config  = self.config.prepare_callbacks
+        create_directories([config.root_dir])
+        call_back_config = PrepareCallbackConfig(
+            root_dir=config.root_dir,
+            tensorflow_root_log_dir=config.tensorflow_root_log_dir,
+            checkpoint_model_file_path=config.checkpoint_model_file_path
+        )
+        return call_back_config
