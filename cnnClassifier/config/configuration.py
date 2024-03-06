@@ -1,6 +1,6 @@
 from cnnClassifier.constants import *
 from cnnClassifier.utils.common import create_directories,read_yaml
-from cnnClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig,PrepareCallbackConfig
+from cnnClassifier.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig,PrepareCallbackConfig,TrainingConfig,EvaluationConfig
 from cnnClassifier import logger
 import os
 import yaml
@@ -46,7 +46,36 @@ class Configuration_manager:
         create_directories([config.root_dir])
         call_back_config = PrepareCallbackConfig(
             root_dir=config.root_dir,
-            tensorflow_root_log_dir=config.tensorflow_root_log_dir,
-            checkpoint_model_file_path=config.checkpoint_model_file_path
+            tensorboard_root_log_dir=config.tensorboard_root_log_dir,
+            checkpoint_model_file_path=config.checkpoint_model_filepath
         )
         return call_back_config
+    
+
+    def get_training_config(self) -> TrainingConfig:
+        training = self.config.training
+        params  = self.params
+        create_directories([training.root_dir])
+        prepare_base_model = self.config.prepare_base_model
+        training_config = TrainingConfig(
+            root_dir=training.root_dir,
+            trained_model_path=training.trained_model_path,
+            updated_base_model_path=prepare_base_model.updated_base_model_path,
+            training_data=os.path.join(self.config.data_ingestion.unzip_dir,"Chicken-fecal-images"),
+            params_epochs=params.EPOCHS,
+            params_batch_size=params.BATCH_SIZE,
+            params_is_augmentation=params.AUGMENTATION,
+            params_image_size=params.IMAGE_SIZE
+        )
+
+        return training_config
+    
+    def get_evaluation_config(self) -> EvaluationConfig:
+        eval_config = EvaluationConfig(
+            path_of_model=Path("artifacts/training/model.h5"),
+            training_data=Path("artifacts/data_ingestion/Chicken-fecal-images"),
+            all_params=self.params,
+            params_image_size=self.params.IMAGE_SIZE,
+            params_batch_size=self.params.BATCH_SIZE
+        )
+        return eval_config

@@ -1045,3 +1045,1118 @@ x==========x]
 ]
 [2024-03-03 13:28:53,844: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
 [2024-03-03 13:28:54,151: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 19:20:58,470: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 19:21:13,558: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 19:21:13,561: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:21:13,592: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:21:13,596: INFO: common: created directory at: artifacts]
+[2024-03-03 19:21:13,598: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 19:21:17,917: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2838:2E51C2:678E8:8BF75:65E48052
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 13:51:16 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100029-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1709473875.193440,VS0,VE1048
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 08a1588f56bfb09a3f0777511d2486d4c281f886
+Expires: Sun, 03 Mar 2024 13:56:16 GMT
+Source-Age: 1
+
+]
+[2024-03-03 19:21:18,706: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 19:21:18,707: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 19:21:18,710: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:21:18,718: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:21:18,718: INFO: common: created directory at: artifacts]
+[2024-03-03 19:21:18,720: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 19:21:19,428: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 19:21:19,774: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 19:21:22,026: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 19:21:22,863: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 19:21:22,865: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 19:21:22,873: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:21:22,881: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:21:22,884: INFO: common: created directory at: artifacts]
+[2024-03-03 19:21:22,888: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 19:21:22,889: ERROR: main: "'ConfigBox' object has no attribute 'tensorflow_root_log_dir'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'tensorflow_root_log_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'tensorflow_root_log_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'tensorflow_root_log_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'tensorflow_root_log_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'tensorflow_root_log_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'tensorflow_root_log_dir'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'tensorflow_root_log_dir'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 15, in main
+    prepare_callbacks_config = config.prepare_callback_config()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 49, in prepare_callback_config
+    tensorflow_root_log_dir=config.tensorflow_root_log_dir,
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'tensorflow_root_log_dir'"
+[2024-03-03 19:23:45,134: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 19:23:46,301: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 19:23:46,303: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:23:46,312: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:23:46,313: INFO: common: created directory at: artifacts]
+[2024-03-03 19:23:46,314: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 19:23:49,156: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2838:2E51C2:678E8:8BF75:65E48052
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 13:53:47 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100024-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709474028.760757,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 70dc23bfcceca09f581e627fea0a94515e25dc26
+Expires: Sun, 03 Mar 2024 13:58:47 GMT
+Source-Age: 152
+
+]
+[2024-03-03 19:23:49,928: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 19:23:49,930: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 19:23:49,932: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:23:49,940: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:23:49,942: INFO: common: created directory at: artifacts]
+[2024-03-03 19:23:49,944: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 19:23:50,384: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 19:23:50,588: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 19:23:51,657: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 19:23:52,280: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 19:23:52,281: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 19:23:52,286: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:23:52,291: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:23:52,293: INFO: common: created directory at: artifacts]
+[2024-03-03 19:23:52,299: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 19:23:52,300: ERROR: main: "'ConfigBox' object has no attribute 'checkpoint_model_file_path'"]
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'checkpoint_model_file_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'checkpoint_model_file_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'checkpoint_model_file_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\config_box.py", line 28, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'checkpoint_model_file_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 503, in box.box.Box.__getitem__
+KeyError: 'checkpoint_model_file_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\box.py", line 536, in box.box.Box.__getattr__
+  File "box\box.py", line 524, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'checkpoint_model_file_path'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\box.py", line 538, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'checkpoint_model_file_path'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 15, in main
+    prepare_callbacks_config = config.prepare_callback_config()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 50, in prepare_callback_config
+    checkpoint_model_file_path=config.checkpoint_model_file_path
+  File "box\config_box.py", line 30, in box.config_box.ConfigBox.__getattr__
+  File "box\box.py", line 552, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'checkpoint_model_file_path'"
+[2024-03-03 19:25:09,526: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 19:25:10,448: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 19:25:10,450: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:25:10,461: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:25:10,462: INFO: common: created directory at: artifacts]
+[2024-03-03 19:25:10,463: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 19:25:13,290: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2838:2E51C2:678E8:8BF75:65E48052
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 13:55:11 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100026-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709474112.596687,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: d2c06000670afb473fa529dee4fe422f4772b3a1
+Expires: Sun, 03 Mar 2024 14:00:11 GMT
+Source-Age: 236
+
+]
+[2024-03-03 19:25:14,200: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 19:25:14,202: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 19:25:14,216: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:25:14,225: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:25:14,227: INFO: common: created directory at: artifacts]
+[2024-03-03 19:25:14,229: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 19:25:14,743: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 19:25:14,988: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 19:25:15,859: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 19:25:16,386: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 19:25:16,387: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 19:25:16,393: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:25:16,399: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:25:16,401: INFO: common: created directory at: artifacts]
+[2024-03-03 19:25:16,412: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 19:25:16,413: ERROR: main: PrepareCallbackConfig.__init__() got an unexpected keyword argument 'tensorboard_root_log_dir']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 15, in main
+    prepare_callbacks_config = config.prepare_callback_config()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\config\configuration.py", line 47, in prepare_callback_config
+    call_back_config = PrepareCallbackConfig(
+TypeError: PrepareCallbackConfig.__init__() got an unexpected keyword argument 'tensorboard_root_log_dir'
+[2024-03-03 19:27:14,762: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 19:27:15,646: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 19:27:15,650: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:27:15,652: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:27:15,653: INFO: common: created directory at: artifacts]
+[2024-03-03 19:27:15,655: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 19:27:18,965: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2838:2E51C2:678E8:8BF75:65E48052
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 13:57:17 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100035-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709474237.132538,VS0,VE275
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: f83cd87af62b40a32211fc1e107a1d33c236a726
+Expires: Sun, 03 Mar 2024 14:02:17 GMT
+Source-Age: 0
+
+]
+[2024-03-03 19:27:19,672: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 19:27:19,673: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 19:27:19,677: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:27:19,685: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:27:19,686: INFO: common: created directory at: artifacts]
+[2024-03-03 19:27:19,688: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 19:27:20,118: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 19:27:20,309: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 19:27:21,179: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 19:27:21,740: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 19:27:21,741: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 19:27:21,747: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:27:21,756: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:27:21,759: INFO: common: created directory at: artifacts]
+[2024-03-03 19:27:21,764: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 19:27:21,766: ERROR: main: type object 'PrepareCallbackConfig' has no attribute 'tensorflow_root_log_dir']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 17, in main
+    callbacks = prepare_call_backs.get_tb_ckpt_callbacks()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\prepare_callbacks.py", line 30, in get_tb_ckpt_callbacks
+    self._create_tb_callbacks,
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\prepare_callbacks.py", line 17, in _create_tb_callbacks
+    self.config.tensorflow_root_log_dir,
+AttributeError: type object 'PrepareCallbackConfig' has no attribute 'tensorflow_root_log_dir'
+[2024-03-03 19:28:12,515: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 19:28:13,737: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 19:28:13,739: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:28:13,742: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:28:13,744: INFO: common: created directory at: artifacts]
+[2024-03-03 19:28:13,745: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 19:28:18,463: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 2838:2E51C2:678E8:8BF75:65E48052
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 13:58:14 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100025-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709474295.899246,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: aaef8bb659d4d254c22826063de734f068c7eefc
+Expires: Sun, 03 Mar 2024 14:03:14 GMT
+Source-Age: 57
+
+]
+[2024-03-03 19:28:19,333: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 19:28:19,334: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 19:28:19,345: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:28:19,350: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:28:19,351: INFO: common: created directory at: artifacts]
+[2024-03-03 19:28:19,354: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 19:28:19,874: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 19:28:20,092: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 19:28:21,091: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 19:28:21,577: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 19:28:21,578: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 19:28:21,581: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 19:28:21,589: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 19:28:21,590: INFO: common: created directory at: artifacts]
+[2024-03-03 19:28:21,592: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 19:28:21,593: ERROR: main: type object 'PrepareCallbackConfig' has no attribute 'tensorboard_root_log_dir']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 17, in main
+    callbacks = prepare_call_backs.get_tb_ckpt_callbacks()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\prepare_callbacks.py", line 30, in get_tb_ckpt_callbacks
+    self._create_tb_callbacks,
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\prepare_callbacks.py", line 17, in _create_tb_callbacks
+    self.config.tensorboard_root_log_dir,
+AttributeError: type object 'PrepareCallbackConfig' has no attribute 'tensorboard_root_log_dir'
+[2024-03-03 22:16:36,875: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 22:16:38,873: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 22:16:38,876: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:16:38,884: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:16:38,886: INFO: common: created directory at: artifacts]
+[2024-03-03 22:16:38,887: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 22:16:43,364: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0DFC:28C33:5174BF:6A72A3:65E4A96F
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 16:46:41 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100035-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1709484400.364234,VS0,VE747
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 372b77a9fc96ac88ea2cba7decb961d35ccf9b72
+Expires: Sun, 03 Mar 2024 16:51:41 GMT
+Source-Age: 0
+
+]
+[2024-03-03 22:16:44,378: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 22:16:44,380: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 22:16:44,398: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:16:44,406: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:16:44,408: INFO: common: created directory at: artifacts]
+[2024-03-03 22:16:44,411: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 22:16:45,050: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 22:16:45,378: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 22:16:46,471: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 22:16:46,968: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 22:16:46,969: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 22:16:46,974: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:16:46,979: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:16:46,981: INFO: common: created directory at: artifacts]
+[2024-03-03 22:16:46,983: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 22:16:46,983: ERROR: main: type object 'PrepareCallbackConfig' has no attribute 'tensorboard_root_log_dir']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 17, in main
+    callbacks = prepare_call_backs.get_tb_ckpt_callbacks()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\prepare_callbacks.py", line 30, in get_tb_ckpt_callbacks
+    self._create_tb_callbacks,
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\prepare_callbacks.py", line 17, in _create_tb_callbacks
+    self.config.tensorboard_root_log_dir,
+AttributeError: type object 'PrepareCallbackConfig' has no attribute 'tensorboard_root_log_dir'
+[2024-03-03 22:18:52,330: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 22:18:53,243: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 22:18:53,245: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:18:53,258: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:18:53,260: INFO: common: created directory at: artifacts]
+[2024-03-03 22:18:53,261: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 22:19:02,087: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0DFC:28C33:5174BF:6A72A3:65E4A96F
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 16:48:59 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100032-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709484540.873171,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: ec13b4140d328dcbcddd376ae4aaa57bbfc0b020
+Expires: Sun, 03 Mar 2024 16:53:59 GMT
+Source-Age: 139
+
+]
+[2024-03-03 22:19:02,880: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 22:19:02,881: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 22:19:02,890: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:19:02,897: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:19:02,899: INFO: common: created directory at: artifacts]
+[2024-03-03 22:19:02,902: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 22:19:03,358: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 22:19:03,538: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 22:19:04,434: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 22:19:05,033: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 22:19:05,034: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 22:19:05,041: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:19:05,050: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:19:05,051: INFO: common: created directory at: artifacts]
+[2024-03-03 22:19:05,053: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 22:19:05,054: ERROR: main: type object 'PrepareCallbackConfig' has no attribute 'tensorboard_root_log_dir']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 17, in main
+    callbacks = prepare_call_backs.get_tb_ckpt_callbacks()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\prepare_callbacks.py", line 30, in get_tb_ckpt_callbacks
+    self._create_tb_callbacks,
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\prepare_callbacks.py", line 17, in _create_tb_callbacks
+    self.config.tensorboard_root_log_dir,
+AttributeError: type object 'PrepareCallbackConfig' has no attribute 'tensorboard_root_log_dir'
+[2024-03-03 22:21:44,654: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 22:21:45,625: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 22:21:45,627: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:21:45,640: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:21:45,643: INFO: common: created directory at: artifacts]
+[2024-03-03 22:21:45,644: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 22:21:49,048: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0DFC:28C33:5174BF:6A72A3:65E4A96F
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 16:51:47 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100033-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709484707.931093,VS0,VE270
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: b81f2e955e64f9ac1e0d744706f7d37fa8a2f528
+Expires: Sun, 03 Mar 2024 16:56:47 GMT
+Source-Age: 0
+
+]
+[2024-03-03 22:21:49,888: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 22:21:49,891: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 22:21:49,893: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:21:49,900: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:21:49,903: INFO: common: created directory at: artifacts]
+[2024-03-03 22:21:49,905: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 22:21:50,424: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 22:21:50,585: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 22:21:51,558: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 22:21:52,148: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 22:21:52,148: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 22:21:52,151: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:21:52,157: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:21:52,158: INFO: common: created directory at: artifacts]
+[2024-03-03 22:21:52,159: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 22:21:52,160: ERROR: main: type object 'PrepareCallbackConfig' has no attribute 'tensorboard_root_log_dir']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 17, in main
+    callbacks = prepare_call_backs.get_tb_ckpt_callbacks()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\prepare_callbacks.py", line 31, in get_tb_ckpt_callbacks
+    self._create_tb_callbacks,
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\prepare_callbacks.py", line 17, in _create_tb_callbacks
+    self.config.tensorboard_root_log_dir,
+AttributeError: type object 'PrepareCallbackConfig' has no attribute 'tensorboard_root_log_dir'
+[2024-03-03 22:22:36,872: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 22:22:37,809: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 22:22:37,811: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:22:37,815: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:22:37,816: INFO: common: created directory at: artifacts]
+[2024-03-03 22:22:37,817: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 22:22:40,304: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0DFC:28C33:5174BF:6A72A3:65E4A96F
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 16:52:38 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100020-HYD
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1709484759.876483,VS0,VE10
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 400b09d42e1d34f843120fbef245ad4b161d46bb
+Expires: Sun, 03 Mar 2024 16:57:38 GMT
+Source-Age: 52
+
+]
+[2024-03-03 22:22:41,085: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 22:22:41,087: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 22:22:41,089: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:22:41,096: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:22:41,097: INFO: common: created directory at: artifacts]
+[2024-03-03 22:22:41,099: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 22:22:41,508: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 22:22:41,683: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 22:22:42,689: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 22:22:43,453: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 22:22:43,453: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 22:22:43,456: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:22:43,462: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:22:43,464: INFO: common: created directory at: artifacts]
+[2024-03-03 22:22:43,467: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 22:22:43,482: ERROR: main: 'PrepareCallbackConfig' object has no attribute 'checkpoint_model_filepath']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 17, in main
+    callbacks = prepare_call_backs.get_tb_ckpt_callbacks()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\prepare_callbacks.py", line 32, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\prepare_callbacks.py", line 25, in _create_ckpt_callbacks
+    filepath=self.config.checkpoint_model_filepath,
+AttributeError: 'PrepareCallbackConfig' object has no attribute 'checkpoint_model_filepath'
+[2024-03-03 22:23:10,911: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 22:23:11,858: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 22:23:11,860: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:23:11,863: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:23:11,864: INFO: common: created directory at: artifacts]
+[2024-03-03 22:23:11,866: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 22:23:14,541: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0DFC:28C33:5174BF:6A72A3:65E4A96F
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 16:53:12 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100030-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709484793.949455,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 517721710478383149005d5b2b052b7cf2bc7ab9
+Expires: Sun, 03 Mar 2024 16:58:12 GMT
+Source-Age: 86
+
+]
+[2024-03-03 22:23:15,277: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 22:23:15,279: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 22:23:15,282: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:23:15,289: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:23:15,290: INFO: common: created directory at: artifacts]
+[2024-03-03 22:23:15,292: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 22:23:15,710: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 22:23:15,874: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 22:23:16,966: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 22:23:17,557: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 22:23:17,566: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 22:23:17,568: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:23:17,574: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:23:17,576: INFO: common: created directory at: artifacts]
+[2024-03-03 22:23:17,578: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 22:23:17,582: INFO: common: created directory at: artifacts/training]
+[2024-03-03 22:23:18,935: ERROR: main: module 'keras.api._v2.keras.preprocessing' has no attribute 'ImageDataGenerator']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 22, in main
+    training.train_valid_generator()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\training.py", line 27, in train_valid_generator
+    valid_datagenerator = tf.keras.preprocessing.ImageDataGenerator(
+AttributeError: module 'keras.api._v2.keras.preprocessing' has no attribute 'ImageDataGenerator'
+[2024-03-03 22:24:36,287: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 22:24:37,381: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 22:24:37,384: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:24:37,387: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:24:37,388: INFO: common: created directory at: artifacts]
+[2024-03-03 22:24:37,390: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 22:24:40,385: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0DFC:28C33:5174BF:6A72A3:65E4A96F
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 16:54:38 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100026-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709484879.727593,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: b04067d0a6d73518c10b314c1f42f8412e661889
+Expires: Sun, 03 Mar 2024 16:59:38 GMT
+Source-Age: 172
+
+]
+[2024-03-03 22:24:41,114: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 22:24:41,115: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 22:24:41,117: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:24:41,124: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:24:41,126: INFO: common: created directory at: artifacts]
+[2024-03-03 22:24:41,128: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 22:24:41,565: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 22:24:41,744: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 22:24:42,819: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 22:24:43,357: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 22:24:43,358: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 22:24:43,364: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:24:43,373: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:24:43,375: INFO: common: created directory at: artifacts]
+[2024-03-03 22:24:43,378: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 22:24:43,385: INFO: common: created directory at: artifacts/training]
+[2024-03-03 22:24:44,619: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion\\chicken-fecal-image']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 22, in main
+    training.train_valid_generator()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\training.py", line 30, in train_valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\preprocessing\image.py", line 1649, in flow_from_directory
+    return DirectoryIterator(
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\preprocessing\image.py", line 563, in __init__
+    for subdir in sorted(os.listdir(directory)):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion\\chicken-fecal-image'
+[2024-03-03 22:35:17,233: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 22:35:18,268: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 22:35:18,271: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:35:18,274: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:35:18,275: INFO: common: created directory at: artifacts]
+[2024-03-03 22:35:18,276: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 22:35:21,608: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0DFC:28C33:5174BF:6A72A3:65E4A96F
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 17:05:19 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100024-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709485520.579636,VS0,VE278
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: c27296a75b9f02aafe3cf2a2ddf154fa1a9f37ff
+Expires: Sun, 03 Mar 2024 17:10:19 GMT
+Source-Age: 0
+
+]
+[2024-03-03 22:35:22,411: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 22:35:22,412: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 22:35:22,415: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:35:22,429: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:35:22,432: INFO: common: created directory at: artifacts]
+[2024-03-03 22:35:22,436: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 22:35:22,918: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 22:35:23,108: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 22:35:24,084: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 22:35:24,787: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 22:35:24,789: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 22:35:24,799: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:35:24,802: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:35:24,806: INFO: common: created directory at: artifacts]
+[2024-03-03 22:35:24,812: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 22:35:24,818: INFO: common: created directory at: artifacts/training]
+[2024-03-03 22:35:26,071: ERROR: main: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion\\chicken-fecal-image']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 22, in main
+    training.train_valid_generator()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\training.py", line 30, in train_valid_generator
+    self.valid_generator = valid_datagenerator.flow_from_directory(
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\preprocessing\image.py", line 1649, in flow_from_directory
+    return DirectoryIterator(
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\preprocessing\image.py", line 563, in __init__
+    for subdir in sorted(os.listdir(directory)):
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'artifacts/data_ingestion\\chicken-fecal-image'
+[2024-03-03 22:39:23,658: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 22:39:24,953: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 22:39:24,955: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:39:24,959: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:39:24,960: INFO: common: created directory at: artifacts]
+[2024-03-03 22:39:24,961: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 22:39:27,889: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0DFC:28C33:5174BF:6A72A3:65E4A96F
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 17:09:26 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100022-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709485766.313117,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 2c3548207446c5debc7ed4fcdb96a820ee578afc
+Expires: Sun, 03 Mar 2024 17:14:26 GMT
+Source-Age: 246
+
+]
+[2024-03-03 22:39:28,811: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 22:39:28,812: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 22:39:28,817: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:39:28,821: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:39:28,824: INFO: common: created directory at: artifacts]
+[2024-03-03 22:39:28,827: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 22:39:29,390: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 22:39:29,657: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 22:39:30,754: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 22:39:31,277: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 22:39:31,278: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 22:39:31,285: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:39:31,291: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:39:31,294: INFO: common: created directory at: artifacts]
+[2024-03-03 22:39:31,302: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 22:39:31,308: INFO: common: created directory at: artifacts/training]
+[2024-03-03 22:39:32,513: ERROR: main: ImageDataGenerator.__init__() got an unexpected keyword argument 'horizontle_file']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 22, in main
+    training.train_valid_generator()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\training.py", line 38, in train_valid_generator
+    train_datagenerator = tf.keras.preprocessing.image.ImageDataGenerator(
+TypeError: ImageDataGenerator.__init__() got an unexpected keyword argument 'horizontle_file'
+[2024-03-03 22:40:33,685: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 22:40:34,664: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 22:40:34,667: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:40:34,679: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:40:34,680: INFO: common: created directory at: artifacts]
+[2024-03-03 22:40:34,683: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 22:40:37,342: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0DFC:28C33:5174BF:6A72A3:65E4A96F
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 17:10:36 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100025-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709485836.764626,VS0,VE265
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: e40ea6c3e8806dbeebfd220066ab920b472e9d5c
+Expires: Sun, 03 Mar 2024 17:15:36 GMT
+Source-Age: 0
+
+]
+[2024-03-03 22:40:38,097: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 22:40:38,099: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 22:40:38,102: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:40:38,109: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:40:38,111: INFO: common: created directory at: artifacts]
+[2024-03-03 22:40:38,112: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 22:40:38,522: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 22:40:38,690: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 22:40:39,830: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 22:40:40,311: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 22:40:40,320: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 22:40:40,323: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:40:40,331: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:40:40,333: INFO: common: created directory at: artifacts]
+[2024-03-03 22:40:40,336: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 22:40:40,341: INFO: common: created directory at: artifacts/training]
+[2024-03-03 22:40:41,525: ERROR: main: ImageDataGenerator.__init__() got an unexpected keyword argument 'horizontal_file']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 22, in main
+    training.train_valid_generator()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\training.py", line 38, in train_valid_generator
+    train_datagenerator = tf.keras.preprocessing.image.ImageDataGenerator(
+TypeError: ImageDataGenerator.__init__() got an unexpected keyword argument 'horizontal_file'
+[2024-03-03 22:41:20,579: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 22:41:21,441: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 22:41:21,445: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:41:21,448: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:41:21,449: INFO: common: created directory at: artifacts]
+[2024-03-03 22:41:21,451: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 22:41:24,016: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0DFC:28C33:5174BF:6A72A3:65E4A96F
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 17:11:22 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100031-HYD
+X-Cache: HIT
+X-Cache-Hits: 7
+X-Timer: S1709485883.549208,VS0,VE0
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: da77b5de0ad9f72eb35f701c61738abd7148cfc7
+Expires: Sun, 03 Mar 2024 17:16:22 GMT
+Source-Age: 47
+
+]
+[2024-03-03 22:41:24,773: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 22:41:24,775: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 22:41:24,778: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:41:24,784: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:41:24,785: INFO: common: created directory at: artifacts]
+[2024-03-03 22:41:24,788: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 22:41:25,204: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 22:41:25,479: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 22:41:26,425: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 22:41:26,953: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 22:41:26,954: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 22:41:26,957: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:41:26,964: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:41:26,966: INFO: common: created directory at: artifacts]
+[2024-03-03 22:41:26,968: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 22:41:26,972: INFO: common: created directory at: artifacts/training]
+[2024-03-03 22:41:30,381: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2024-03-03 22:42:33,727: ERROR: main: type object 'Path' has no attribute 'endswith']
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 35, in <module>
+    training_model.main()
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\pipeline\stage_03_training.py", line 23, in main
+    training.train(callback_list=callbacks)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\training.py", line 75, in train
+    self.save_model(
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\cnnClassifier\components\training.py", line 59, in save_model
+    model.save(Path)
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\saving\legacy\saving_utils.py", line 368, in is_hdf5_filepath
+    filepath.endswith(".h5")
+AttributeError: type object 'Path' has no attribute 'endswith'
+[2024-03-03 22:43:17,175: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-03 22:43:18,137: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-03 22:43:18,139: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:43:18,142: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:43:18,144: INFO: common: created directory at: artifacts]
+[2024-03-03 22:43:18,145: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-03 22:43:21,586: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 0DFC:28C33:5174BF:6A72A3:65E4A96F
+Accept-Ranges: bytes
+Date: Sun, 03 Mar 2024 17:13:19 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100020-HYD
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1709485999.485322,VS0,VE13
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: eced211576ff8f163f78fde5d0c3e619c919a908
+Expires: Sun, 03 Mar 2024 17:18:19 GMT
+Source-Age: 163
+
+]
+[2024-03-03 22:43:22,424: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-03 22:43:22,425: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-03 22:43:22,436: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:43:22,442: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:43:22,444: INFO: common: created directory at: artifacts]
+[2024-03-03 22:43:22,447: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-03 22:43:22,885: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-03 22:43:23,066: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-03 22:43:23,971: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-03 22:43:24,503: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-03 22:43:24,504: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-03 22:43:24,511: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-03 22:43:24,519: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-03 22:43:24,522: INFO: common: created directory at: artifacts]
+[2024-03-03 22:43:24,524: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-03 22:43:24,527: INFO: common: created directory at: artifacts/training]
+[2024-03-03 22:43:26,876: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2024-03-03 22:44:29,422: INFO: main: >>>stage Training pipeline completed<<<<<<]
