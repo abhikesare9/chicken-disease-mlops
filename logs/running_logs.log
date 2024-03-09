@@ -2160,3 +2160,129 @@ x==========x]
 [2024-03-03 22:43:26,876: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
 ]
 [2024-03-03 22:44:29,422: INFO: main: >>>stage Training pipeline completed<<<<<<]
+[2024-03-07 19:53:17,217: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-07 19:53:32,944: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-07 19:53:32,949: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-07 19:53:32,962: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-07 19:53:32,965: INFO: common: created directory at: artifacts]
+[2024-03-07 19:53:32,966: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-07 19:53:37,207: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6A06:2E11D:1D44A8:259F35:65E9CDE3
+Accept-Ranges: bytes
+Date: Thu, 07 Mar 2024 14:23:34 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100031-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1709821413.205120,VS0,VE978
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 8278d9ef980929a618de6a8fd8041d76c2876fc5
+Expires: Thu, 07 Mar 2024 14:28:34 GMT
+Source-Age: 1
+
+]
+[2024-03-07 19:53:38,063: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-07 19:53:38,064: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-07 19:53:38,070: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-07 19:53:38,080: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-07 19:53:38,083: INFO: common: created directory at: artifacts]
+[2024-03-07 19:53:38,085: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-07 19:53:38,773: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-07 19:53:39,112: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-07 19:53:40,283: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-07 19:53:41,088: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-07 19:53:41,089: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-07 19:53:41,092: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-07 19:53:41,101: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-07 19:53:41,103: INFO: common: created directory at: artifacts]
+[2024-03-07 19:53:41,106: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-07 19:53:41,131: INFO: common: created directory at: artifacts/training]
+[2024-03-07 19:53:44,780: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2024-03-07 19:54:48,020: INFO: main: >>>stage Training pipeline completed<<<<<<]
+[2024-03-07 19:54:48,021: INFO: main: >>>>>>>>STAGE Evaluation pipeline started<<<<<<<<<<<<<]
+[2024-03-07 19:54:48,021: ERROR: main: EvaluationPipeline.main() takes 0 positional arguments but 1 was given]
+Traceback (most recent call last):
+  File "C:\Users\abhik\Desktop\chicken-disease-mlops\main.py", line 47, in <module>
+    evaluation_pipeline.main()
+TypeError: EvaluationPipeline.main() takes 0 positional arguments but 1 was given
+[2024-03-07 19:56:58,592: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2024-03-07 19:56:59,727: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-03-07 19:56:59,730: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-07 19:56:59,733: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-07 19:56:59,735: INFO: common: created directory at: artifacts]
+[2024-03-07 19:56:59,736: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-03-07 19:57:03,400: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 6A06:2E11D:1D44A8:259F35:65E9CDE3
+Accept-Ranges: bytes
+Date: Thu, 07 Mar 2024 14:26:59 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100024-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1709821620.886385,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: b526bbde5301efdf42d36399fb7dc61e66b745b3
+Expires: Thu, 07 Mar 2024 14:31:59 GMT
+Source-Age: 207
+
+]
+[2024-03-07 19:57:04,424: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-03-07 19:57:04,426: INFO: main: >>>>>>>>STAGE PrePare Base Model started<<<<<<<<<<<<<]
+[2024-03-07 19:57:04,431: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-07 19:57:04,442: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-07 19:57:04,444: INFO: common: created directory at: artifacts]
+[2024-03-07 19:57:04,446: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-03-07 19:57:05,090: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2024-03-07 19:57:05,279: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2024-03-07 19:57:06,341: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-03-07 19:57:06,937: INFO: main: >>>stage PrePare Base Model completed<<<<<<]
+[2024-03-07 19:57:06,938: INFO: main: >>>>>>>>STAGE Training pipeline started<<<<<<<<<<<<<]
+[2024-03-07 19:57:06,941: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-07 19:57:06,949: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-07 19:57:06,950: INFO: common: created directory at: artifacts]
+[2024-03-07 19:57:06,953: INFO: common: created directory at: artifacts/prepare_callbacks]
+[2024-03-07 19:57:06,957: INFO: common: created directory at: artifacts/training]
+[2024-03-07 19:57:09,486: WARNING: module_wrapper: From C:\Users\abhik\Desktop\chicken-disease-mlops\venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2024-03-07 19:58:15,386: INFO: main: >>>stage Training pipeline completed<<<<<<]
+[2024-03-07 19:58:15,387: INFO: main: >>>>>>>>STAGE Evaluation pipeline started<<<<<<<<<<<<<]
+[2024-03-07 19:58:15,391: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-03-07 19:58:15,395: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-03-07 19:58:15,397: INFO: common: created directory at: artifacts]
+[2024-03-07 19:58:37,185: INFO: common: json file saved at: scores.json]
+[2024-03-07 19:58:37,185: INFO: main: >>>stage Evaluation pipeline completed<<<<<<]

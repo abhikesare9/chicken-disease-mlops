@@ -1,10 +1,17 @@
+
+data "google_compute_network" "mlops-vpc"{
+  name = var.vpc_name
+}
+
 resource "google_container_cluster" "gke_cluster" {
   name     = var.clusterName
-  location = var.region # Replace this with your desired region
-
+  location = "${var.region}-f" # Replace this with your desired region
+  network  = var.vpc_name
+  subnetwork  = data.google_compute_network.mlops-vpc.subnetworks_self_links[3]
   enable_shielded_nodes    = "true"
   remove_default_node_pool = true
   initial_node_count       = 1
+  deletion_protection = "false"
 
 
   release_channel {
@@ -35,8 +42,9 @@ resource "google_container_cluster" "gke_cluster" {
 
 resource "google_container_node_pool" "primary_nodes" {
   name       = "${var.clusterName}-pool"
-  location   = var.region # Replace this with your desired region
+  location   = "${var.region}-f" # Replace this with your desired region
   cluster    = google_container_cluster.gke_cluster.name
+  node_locations = ["${var.region}-f"]
   node_count = 1
 
   management {

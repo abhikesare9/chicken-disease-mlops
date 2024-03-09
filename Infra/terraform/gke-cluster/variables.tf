@@ -22,3 +22,8 @@ variable "machineType" {
   description = "Node Instance machine type"
   default = "e2-medium"
 }
+variable vpc_name {
+  type        = string
+  default     = "mlops-vpc"
+  description = "vpc-details"
+}
