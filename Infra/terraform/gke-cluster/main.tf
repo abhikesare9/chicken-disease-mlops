@@ -13,6 +13,11 @@ resource "google_container_cluster" "gke_cluster" {
   initial_node_count       = 1
   deletion_protection = "false"
 
+  private_cluster_config {
+    enable_private_nodes = true
+    enable_private_endpoint = false
+    master_ipv4_cidr_block = "172.16.0.0/28"
+  }
 
   release_channel {
     channel = "STABLE"
