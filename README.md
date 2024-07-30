@@ -1,1 +1,1 @@
-""[Dchicken disease analyasis using cnn"
+"chicken disease analyasis using cnn"
